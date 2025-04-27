@@ -38,7 +38,6 @@ footer {
     display: grid;
     grid-template-columns: 5fr 1fr 1fr;
     background-color: #061E24;
-    width: 100%;
 }
 
 .footer-bottom p {

@@ -42,16 +42,26 @@ header {
     margin-right: 20px;
     color: #FFFFFF;
     padding-left: 10%;
+    align-items: center;
   }
   
-#home h3, #home h2 {
+ #home h3 {
     color: #FFFFFF;
+}
+
+#home h2 {
+    color:#017B65;
+}
+
+.logo {
+    font-size: 2rem;
 }
 
 .home-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
     gap: 2rem;
 }
   
@@ -109,11 +119,15 @@ strong {
 
 .btn {
     display: inline-block;
-    padding: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 25px;
     border: 1px solid white;
     color: white;
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .hire {
@@ -130,11 +144,14 @@ strong {
     justify-content: space-between;
     flex-direction: row-reverse;
     gap: 2rem;
-    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     margin-left: 5%;
     margin-right: 5%;
     padding: 10px;
+}
+
+.about-section h4 {
+    color: #666;
 }
 
 .about-content {
@@ -225,13 +242,17 @@ strong {
     background: #fff;
 }
   
-.container {
+.skill-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
     gap: 50px;
     flex-wrap: wrap;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
 }
   
 .skills-content {
@@ -288,7 +309,7 @@ strong {
 }
   
 .Spec-grid {
-    background-color: #f9f9f9;
+    background-color: #f6f6f6;
     padding: 5% 10%;
 }
   
@@ -336,14 +357,14 @@ strong {
     background-color: #FFFFFF;
     color: white;
     padding: 50px 0;
+    text-align: center;
+    align-items: center;
 }
 
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    text-align: center;
-    align-items: center;
 }
 
 .stat-item h3 {
@@ -359,7 +380,7 @@ strong {
 
 #portfolio {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #f6f6f6;
 }
 
 .port-title h2 {
@@ -420,4 +441,91 @@ strong {
 .project:hover .project-overlay {
     opacity: 1;
 }
+
+.logo-section {
+    background-color: #3A7F6A; 
+    padding: 3rem 0;
+    text-align: center; 
+}
+  
+.logo-img {
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto;
+}
+  
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    .home-content, .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .home-img img, .about-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gridsec {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .home-img img, .about-img {
+        width: 90%;
+    }
+    
+    .bio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services-grid, 
+    .stats-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.2rem; }
+}
+  
   
