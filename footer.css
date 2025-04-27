@@ -1,0 +1,50 @@
+
+footer {
+    background-color: #02191E;
+    color: white;
+}
+
+.footer-container {
+    background-color: #02191E;
+    margin-bottom: 50px;
+}
+
+.footer-about h3 {
+    font-size: 1.8rem;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.footer-about p {
+    color: #aaa;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-contact p {
+    color: #aaa;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-contact i {
+    margin-left: 10px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    color: #aaa;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    background-color: #061E24;
+    width: 100%;
+}
+
+.footer-bottom p {
+    padding-left: 30%;
+}
+
+.footer-bottom i {
+    color: #aaa;
+}
